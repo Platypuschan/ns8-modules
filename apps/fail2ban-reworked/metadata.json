@@ -1,0 +1,16 @@
+{
+  "name": "Fail2ban Reworked",
+  "description": {
+    "en": "Permanent bans, shared whitelist, and coordinator synchronization for NS8.",
+    "de": "Dauerhafte IP-Sperren, gemeinsame Whitelist und Koordinator-Synchronisierung für NS8."
+  },
+  "categories": ["security"],
+  "authors": [{"name": "Platypuschan"}],
+  "docs": {
+    "documentation_url": "https://github.com/Platypuschan/ns8-fail2ban-reworked#readme",
+    "bug_url": "https://github.com/Platypuschan/ns8-fail2ban-reworked/issues",
+    "code_url": "https://github.com/Platypuschan/ns8-fail2ban-reworked",
+    "relnotes_url": "https://github.com/Platypuschan/ns8-fail2ban-reworked/releases"
+  },
+  "source": "ghcr.io/platypuschan/fail2ban-reworked"
+}

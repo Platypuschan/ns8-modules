@@ -1,0 +1,19 @@
+{
+  "name": "Gitea Reworked",
+  "description": {
+    "en": "Self-hosted Git service for NS8 with AD integration and recovery administrator controls.",
+    "de": "Selbst gehosteter Git-Dienst für NS8 mit AD-Anbindung und Recovery-Administrator."
+  },
+  "categories": ["development"],
+  "authors": [
+    {"name": "Kemboi Elvis", "email": "kemboielvis@genius.ke"},
+    {"name": "Platypuschan"}
+  ],
+  "docs": {
+    "documentation_url": "https://github.com/Platypuschan/ns8-gitea-reworked#readme",
+    "bug_url": "https://github.com/Platypuschan/ns8-gitea-reworked/issues",
+    "code_url": "https://github.com/Platypuschan/ns8-gitea-reworked",
+    "relnotes_url": "https://github.com/Platypuschan/ns8-gitea-reworked/releases"
+  },
+  "source": "ghcr.io/platypuschan/gitea-reworked"
+}

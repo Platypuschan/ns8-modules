@@ -1,0 +1,19 @@
+{
+  "name": "Samba Reworked",
+  "description": {
+    "en": "NS8 Samba with cross-cluster AD domain-controller join and replication alerts.",
+    "de": "NS8 Samba mit clusterübergreifendem AD-Domänenbeitritt und Replikationsmeldungen."
+  },
+  "categories": ["collaboration", "storage"],
+  "authors": [
+    {"name": "NethServer team", "email": "nethserver@nethesis.it"},
+    {"name": "Platypuschan"}
+  ],
+  "docs": {
+    "documentation_url": "https://github.com/Platypuschan/ns8-samba-reworked#readme",
+    "bug_url": "https://github.com/Platypuschan/ns8-samba-reworked/issues",
+    "code_url": "https://github.com/Platypuschan/ns8-samba-reworked",
+    "relnotes_url": "https://github.com/Platypuschan/ns8-samba-reworked/releases"
+  },
+  "source": "ghcr.io/platypuschan/samba"
+}

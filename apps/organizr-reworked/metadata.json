@@ -1,0 +1,16 @@
+{
+  "name": "Organizr Reworked",
+  "description": {
+    "en": "Unified dashboard for self-hosted services and bookmarks on NS8.",
+    "de": "Gemeinsames Dashboard für selbst gehostete Dienste und Lesezeichen auf NS8."
+  },
+  "categories": ["collaboration"],
+  "authors": [{"name": "Platypuschan"}],
+  "docs": {
+    "documentation_url": "https://github.com/Platypuschan/ns8-organizr-reworked#readme",
+    "bug_url": "https://github.com/Platypuschan/ns8-organizr-reworked/issues",
+    "code_url": "https://github.com/Platypuschan/ns8-organizr-reworked",
+    "relnotes_url": "https://github.com/Platypuschan/ns8-organizr-reworked/releases"
+  },
+  "source": "ghcr.io/platypuschan/organizr-reworked"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "ntfy Reworked",
+  "description": {
+    "en": "Self-hosted push notifications for NS8 with customizable server configuration.",
+    "de": "Selbst gehostete Push-Benachrichtigungen für NS8 mit anpassbarer Serverkonfiguration."
+  },
+  "categories": ["communication"],
+  "authors": [
+    {"name": "Martin Bhuong", "email": "martin@genius.ke"},
+    {"name": "Platypuschan"}
+  ],
+  "docs": {
+    "documentation_url": "https://github.com/Platypuschan/ns8-ntfy-reworked#readme",
+    "bug_url": "https://github.com/Platypuschan/ns8-ntfy-reworked/issues",
+    "code_url": "https://github.com/Platypuschan/ns8-ntfy-reworked",
+    "relnotes_url": "https://github.com/Platypuschan/ns8-ntfy-reworked/releases"
+  },
+  "source": "ghcr.io/platypuschan/ntfy-reworked"
+}
