@@ -1,0 +1,18 @@
+{
+  "name": "adguard-home",
+  "description": {
+    "en": "Network-wide DNS server that blocks ads and trackers, with DNS-over-HTTPS.",
+    "de": "Netzwerkweiter DNS-Server, der Werbung und Tracker blockiert, mit DNS-over-HTTPS."
+  },
+  "categories": ["security", "system_administration"],
+  "authors": [
+    {"name": "Platypuschan"}
+  ],
+  "docs": {
+    "documentation_url": "https://github.com/Platypuschan/ns8-adguard-home#readme",
+    "bug_url": "https://github.com/Platypuschan/ns8-adguard-home/issues",
+    "code_url": "https://github.com/Platypuschan/ns8-adguard-home",
+    "relnotes_url": "https://github.com/Platypuschan/ns8-adguard-home/releases"
+  },
+  "source": "ghcr.io/platypuschan/adguard-home"
+}
