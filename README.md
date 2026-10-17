@@ -27,7 +27,7 @@ Enable the repository, then select **Reload repositories** in the Software Cente
 
 The [quality review](docs/quality-review-2026-10-17.md) records the nine
 [stephdl/ns8-apps listing criteria](https://github.com/stephdl/ns8-apps#quality-score),
-screenshot provenance, and changes that still need a module release.
+screenshot provenance, and verified stable module images.
 Run `python3 scripts/check-quality.py` to check the current public listing, or
 `python3 scripts/check-quality.py --apps apps` to check prepared metadata and
 assets against the labels of the currently published images. This score measures

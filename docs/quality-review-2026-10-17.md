@@ -4,14 +4,14 @@ Scope: the eight apps in `apps/` at catalog commit `ab365514f629df7979265a4d2052
 
 Criteria: [stephdl/ns8-apps](https://github.com/stephdl/ns8-apps#quality-score), checked against its README and `crawler/model.py` on 2026-10-17. The nine checks measure listing completeness, not runtime/security quality.
 
-| App | Initial score | Missing initially | Prepared listing + existing released image | Minimum core change |
+| App | Initial score | Missing initially | Listing with released module image | Minimum core change |
 | --- | --- | --- | --- | --- |
-| adguard-home | 6/9 | ns8 topic, screenshots, minimum core | 8/9 | 3.23.0 |
+| adguard-home | 6/9 | ns8 topic, screenshots, minimum core | 9/9 | 3.23.0 |
 | fail2ban-reworked | 7/9 | ns8 topic, screenshots | 9/9 | already present |
 | gitea-reworked | 7/9 | ns8 topic, screenshots | 9/9 | already present |
-| maubot | 5/9 | ns8 topic, screenshots, minimum core, English description <60 characters | 8/9 | 3.23.0 |
-| ntfy-reworked | 6/9 | ns8 topic, screenshots, minimum core | 8/9 | 3.22.0 |
-| obsidian-livesync | 6/9 | ns8 topic, screenshots, minimum core | 8/9 | 3.22.0 |
+| maubot | 5/9 | ns8 topic, screenshots, minimum core, English description <60 characters | 9/9 | 3.23.0 |
+| ntfy-reworked | 6/9 | ns8 topic, screenshots, minimum core | 9/9 | 3.22.0 |
+| obsidian-livesync | 6/9 | ns8 topic, screenshots, minimum core | 9/9 | 3.22.0 |
 | organizr-reworked | 7/9 | ns8 topic, screenshots | 9/9 | already present |
 | samba-reworked | 7/9 | ns8 topic, screenshots | 9/9 | already present |
 
@@ -19,12 +19,12 @@ Criteria: [stephdl/ns8-apps](https://github.com/stephdl/ns8-apps#quality-score),
 
 - Added and read back the `ns8` GitHub topic on all eight source repositories. This change is already public. Existing licenses are recognized as GPL-3.0; none were changed.
 - Standard categories, PNG logos, translated descriptions and documentation/issue links already passed.
-- Added screenshots to catalog app directories. Seven apps use unchanged screenshots from real Debian 13 QEMU installation artifacts for their current source commit. Status screenshots containing loading skeletons were omitted.
+- Added screenshots to catalog app directories. Seven apps use unchanged screenshots from real Debian 13 QEMU installation artifacts for the source commits listed below. Status screenshots containing loading skeletons were omitted.
 - Samba uses a browser capture of the actual remote-domain setup wizard, with example data and a mocked read-only domain lookup in a local preview. This is a UI preview, not evidence of an NS8 installation or AD join.
 - Extended the maubot English description in the catalog and source UI metadata.
 - Four module PRs add `org.nethserver.min-core` and increment `CATALOG_VERSION`: AdGuard Home 0.1.2, maubot 0.1.2, ntfy 0.3.5, Obsidian LiveSync 0.3.1. The minimums conservatively match cores recorded by existing successful QEMU installation tests; older versions were not compatibility-tested. No label is fabricated in the catalog for an old image.
 
-The prepared metadata/assets meet all listing checks under this repository’s control. The four image-label points remain pending merge and a new tested stable module release. Screenshots and the catalog description require merging the catalog PR and its Pages publish job. A later stephdl crawl (documented interval: up to six hours) is needed to reflect the public changes. No merge, stable release or Pages deployment was performed by this task.
+All four module PRs have been merged, their main commits have passed the release pipeline, and the tested stable images have been published. The score column above uses the catalog metadata/assets in this commit together with those actual released images. Publishing this catalog commit through Pages exposes the updated screenshots and description in repodata. A later stephdl crawl (documented interval: up to six hours) is needed to reflect the public changes. No user installation was updated.
 
 ## Source and screenshot evidence
 
@@ -75,3 +75,16 @@ The GitHub snapshot maps `owner/repo` to the public repository object with `topi
 - [maubot #3](https://github.com/Platypuschan/ns8-maubot/pull/3)
 - [ntfy #21](https://github.com/Platypuschan/ns8-ntfy-reworked/pull/21)
 - [Obsidian LiveSync #4](https://github.com/Platypuschan/ns8-obsidian-livesync/pull/4)
+
+## Stable image publication
+
+The user authorized merging and completing publication on 2026-10-17. The existing workflows promoted tested images to stable version tags without rebuilding them. Public registry inspection verified each image revision and minimum-core label. Full digests and workflow references are in [quality-publication-2026-10-17.json](quality-publication-2026-10-17.json).
+
+| Module | Stable version | Tested main commit | Promotion |
+| --- | --- | --- | --- |
+| ns8-adguard-home | 0.1.2 | [776489db](https://github.com/Platypuschan/ns8-adguard-home/commit/776489db81e14ab4e50b4d18899d47ae58f48201) | [successful](https://github.com/Platypuschan/ns8-adguard-home/actions/runs/39031494990) |
+| ns8-maubot | 0.1.2 | [54a6f405](https://github.com/Platypuschan/ns8-maubot/commit/54a6f405ce6be76763f81957134782e1205df56d) | [successful](https://github.com/Platypuschan/ns8-maubot/actions/runs/39031164294) |
+| ns8-ntfy-reworked | 0.3.5 | [80e77ad3](https://github.com/Platypuschan/ns8-ntfy-reworked/commit/80e77ad3c3e994d7998b9e3dee458a36d47e8d0b) | [successful](https://github.com/Platypuschan/ns8-ntfy-reworked/actions/runs/39031357884) |
+| ns8-obsidian-livesync | 0.3.1 | [a11097ec](https://github.com/Platypuschan/ns8-obsidian-livesync/commit/a11097ec64378934271c0ac91b18d83cf09a682e) | [successful](https://github.com/Platypuschan/ns8-obsidian-livesync/actions/runs/39031720936) |
+
+All 16 main-commit QEMU installation/update legs passed. One AdGuard Debian update attempt initially failed while installing the unchanged previous version because Docker Hub returned HTTP 502 for the pinned runtime image. The targeted job retry passed; no module change or bypass was needed. All main scan jobs completed successfully; this is not a claim of zero vulnerability findings.
