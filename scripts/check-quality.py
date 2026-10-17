@@ -40,9 +40,12 @@ def displayed_version(entry):
 
 
 def checks(entry, repository):
-    description = entry.get("description", {})
+    # The crawler drops empty translations and normalizes category aliases
+    # before evaluating compliance.
+    description = {key: value for key, value in entry.get("description", {}).items() if value}
     docs = entry.get("docs", {})
-    categories = entry.get("categories", [])
+    aliases = {"system": "system_administration", "audio": "multimedia"}
+    categories = [aliases.get(c.lower(), c.lower()) for c in entry.get("categories", [])]
     return {
         "topic": "ns8" in (repository.get("topics") or []),
         "categories": bool(categories) and all(c in CATEGORIES for c in categories),

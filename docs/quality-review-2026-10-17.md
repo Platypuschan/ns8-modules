@@ -63,7 +63,7 @@ The GitHub snapshot maps `owner/repo` to the public repository object with `topi
 
 ## Validation
 
-- Four audit regression tests plus the actual catalog metadata/assets check.
+- Five audit regression tests plus the actual catalog metadata/assets check.
 - Catalog generation fetched public GHCR versions and labels for all eight modules; copied asset paths and PNG signatures checked locally.
 - All four changed modules: shell syntax, catalog-version consistency against `origin/main`, whitespace checks.
 - Existing module unit suites: AdGuard Home 34, maubot 35, ntfy 38, Obsidian LiveSync 50; all passed using Python 3.13 with PyYAML 6.0.3 and ldap3 2.9.1.

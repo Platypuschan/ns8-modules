@@ -1,6 +1,3 @@
 __pycache__/
 *.pyc
 site/
-
-__pycache__/
-*.pyc

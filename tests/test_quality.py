@@ -44,6 +44,12 @@ class QualityTests(unittest.TestCase):
         self.assertTrue(quality.checks(entry, {})["description"])
         self.assertTrue(quality.checks(entry, {})["categories"])
 
+    def test_empty_translation_and_category_aliases_follow_crawler(self):
+        entry = {"description": {"en": "x" * 60, "de": ""}, "categories": ["SYSTEM", "audio"]}
+        result = quality.checks(entry, {})
+        self.assertFalse(result["translations"])
+        self.assertTrue(result["categories"])
+
     def test_local_assets_do_not_invent_published_image_labels(self):
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)
