@@ -22,3 +22,13 @@ https://platypuschan.github.io/ns8-modules/ns8/updates/
 ```
 
 Enable the repository, then select **Reload repositories** in the Software Center. The links above have setup details for each module. If you find a bug or have an idea, please open an issue in that module's repository and tell me what you tried.
+
+## Catalog listing quality
+
+The [quality review](docs/quality-review-2026-10-17.md) records the nine
+[stephdl/ns8-apps listing criteria](https://github.com/stephdl/ns8-apps#quality-score),
+screenshot provenance, and changes that still need a module release.
+Run `python3 scripts/check-quality.py` to check the current public listing, or
+`python3 scripts/check-quality.py --apps apps` to check prepared metadata and
+assets against the labels of the currently published images. This score measures
+listing completeness; it does not certify runtime or security quality.

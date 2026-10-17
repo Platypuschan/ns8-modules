@@ -1,0 +1,208 @@
+{
+  "checked_at": "2026-10-17",
+  "criteria": "https://github.com/stephdl/ns8-apps#quality-score",
+  "catalog_base_commit": "ab365514f629df7979265a4d2052769da91a46b2",
+  "repositories": {
+    "Platypuschan/ns8-obsidian-livesync": {
+      "full_name": "Platypuschan/ns8-obsidian-livesync",
+      "topics": [
+        "ns8"
+      ],
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "default_branch": "main",
+      "archived": false
+    },
+    "Platypuschan/ns8-adguard-home": {
+      "full_name": "Platypuschan/ns8-adguard-home",
+      "topics": [
+        "ns8"
+      ],
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "default_branch": "main",
+      "archived": false
+    },
+    "Platypuschan/ns8-fail2ban-reworked": {
+      "full_name": "Platypuschan/ns8-fail2ban-reworked",
+      "topics": [
+        "ns8"
+      ],
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "default_branch": "main",
+      "archived": false
+    },
+    "Platypuschan/ns8-samba-reworked": {
+      "full_name": "Platypuschan/ns8-samba-reworked",
+      "topics": [
+        "ns8"
+      ],
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "default_branch": "main",
+      "archived": false
+    },
+    "Platypuschan/ns8-maubot": {
+      "full_name": "Platypuschan/ns8-maubot",
+      "topics": [
+        "ns8"
+      ],
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "default_branch": "main",
+      "archived": false
+    },
+    "Platypuschan/ns8-gitea-reworked": {
+      "full_name": "Platypuschan/ns8-gitea-reworked",
+      "topics": [
+        "ns8"
+      ],
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "default_branch": "main",
+      "archived": false
+    },
+    "Platypuschan/ns8-ntfy-reworked": {
+      "full_name": "Platypuschan/ns8-ntfy-reworked",
+      "topics": [
+        "ns8"
+      ],
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "default_branch": "main",
+      "archived": false
+    },
+    "Platypuschan/ns8-organizr-reworked": {
+      "full_name": "Platypuschan/ns8-organizr-reworked",
+      "topics": [
+        "ns8"
+      ],
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "default_branch": "main",
+      "archived": false
+    }
+  },
+  "apps": {
+    "adguard-home": {
+      "source_commit": "ce4dc08cfe6c7228f70181dea16be5c9d55804d8",
+      "screenshots": {
+        "settings.png": "6cd1d73a677177c77cc039078278679b3e96754e142f21617ddde194f296b722"
+      },
+      "artifact_id": 11708561546,
+      "run_url": "https://github.com/Platypuschan/ns8-adguard-home/actions/runs/38154896956"
+    },
+    "fail2ban-reworked": {
+      "source_commit": "52147df83622d297579fb0e3919551b3fa744a4f",
+      "screenshots": {
+        "settings.png": "dc1f45fca2fe22ec445b8bfab74fc088c489c52ed1a334551122220abb59a0b8"
+      },
+      "artifact_id": 11307242503,
+      "run_url": "https://github.com/Platypuschan/ns8-fail2ban-reworked/actions/runs/37212657944"
+    },
+    "gitea-reworked": {
+      "source_commit": "5a82a748c886389990d153ffe8cf3078c059dd66",
+      "screenshots": {
+        "settings.png": "9f6fc7216e5380022b3f87c233cd7f762a52b48e40486cc6af649be7d3fde636",
+        "status.png": "c7c335e169a451a56b5a5f4a06218956a1bf320443285eb13dd049a87a99822d"
+      },
+      "artifact_id": 11309487108,
+      "run_url": "https://github.com/Platypuschan/ns8-gitea-reworked/actions/runs/37219549922"
+    },
+    "maubot": {
+      "source_commit": "814617bd3491a6a45a6ce339b011304908d58d22",
+      "screenshots": {
+        "settings.png": "9e3798e871fd118c265a3b90f2d25e6dd53f585f67bf4fb8b4ab8aecd96afc87"
+      },
+      "artifact_id": 11681050713,
+      "run_url": "https://github.com/Platypuschan/ns8-maubot/actions/runs/38081654839"
+    },
+    "ntfy-reworked": {
+      "source_commit": "a7bea4a347518ccdb5505639ac81f876d981c419",
+      "screenshots": {
+        "settings.png": "a991e01bbccea47c0c5964bf41f471a118276a90eb09bb6709b330fb422f9ddb"
+      },
+      "artifact_id": 11307921695,
+      "run_url": "https://github.com/Platypuschan/ns8-ntfy-reworked/actions/runs/37214325103"
+    },
+    "obsidian-livesync": {
+      "source_commit": "d395bf03744ce71242efb701eea5248808c99d77",
+      "screenshots": {
+        "settings.png": "bd7891b7351229b8a5093f275d56508c999aef617b0938ad3ee48a25dbf8973c"
+      },
+      "artifact_id": 11319291904,
+      "run_url": "https://github.com/Platypuschan/ns8-obsidian-livesync/actions/runs/37245993463"
+    },
+    "organizr-reworked": {
+      "source_commit": "c0cbfd1e7cbbc1951a50d85dbcf6c38b2fb780bc",
+      "screenshots": {
+        "settings.png": "245494655f58b265093451873021c19a1e3315e19993fd57816ae1503ec617df",
+        "status.png": "7a3339cf08c07830ee5668a8509451933c4b6a070402cece92b4e81c4e61e449"
+      },
+      "artifact_id": 11308130803,
+      "run_url": "https://github.com/Platypuschan/ns8-organizr-reworked/actions/runs/37214330747"
+    },
+    "samba-reworked": {
+      "source_commit": "314ae53c84d275762be7a3c7496cc634fd51ba44",
+      "screenshots": {
+        "remote-domain.png": "c4c9bf8c830c84666a525f6226be952b58d0dfa47cead20d4e4a31066427c809"
+      },
+      "preview": {
+        "upstream_ui": "NethServer/ns8-samba@3.5.0",
+        "component": "ui-overlay/src/components/FirstConfigurationModal.vue",
+        "method": "Actual component rendered with Vue 2.7.16, Carbon Vue 2.45.1, ns8-ui-lib 2.2.1; local read-only domain lookup stub, empty domain/IP example configuration; preview-only modal initialization to avoid parent-core lifecycle resets; Playwright selected the remote-domain page; example field values were initialized in the component state and verified in the rendered DOM. No AD join or backend writes.",
+        "example_values": [
+          "ad.example.com",
+          "EXAMPLE",
+          "198.51.100.2",
+          "masked example-only password"
+        ],
+        "dimensions": [
+          1280,
+          900
+        ]
+      }
+    }
+  }
+}
