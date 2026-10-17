@@ -1,0 +1,495 @@
+{
+  "images": {
+    "ns8-adguard-home": {
+      "image": "ghcr.io/platypuschan/adguard-home",
+      "version": "0.1.2",
+      "digest": "sha256:1d58862afbd62e713420dc9be174462f57e823a5db716ab6a1b136406eadb1df",
+      "revision": "776489db81e14ab4e50b4d18899d47ae58f48201",
+      "min_core": "3.23.0"
+    },
+    "ns8-maubot": {
+      "image": "ghcr.io/platypuschan/maubot",
+      "version": "0.1.2",
+      "digest": "sha256:1b3f8079108f71c1d275f6f746bf432d4f1260f37ca0cf3ba6c28498cadd80a4",
+      "revision": "54a6f405ce6be76763f81957134782e1205df56d",
+      "min_core": "3.23.0"
+    },
+    "ns8-ntfy-reworked": {
+      "image": "ghcr.io/platypuschan/ntfy-reworked",
+      "version": "0.3.5",
+      "digest": "sha256:cee80c5c104ba8f03635467b7d437cf34dfbbecccee73d176b2cbf98fd82768b",
+      "revision": "80e77ad3c3e994d7998b9e3dee458a36d47e8d0b",
+      "min_core": "3.22.0"
+    },
+    "ns8-obsidian-livesync": {
+      "image": "ghcr.io/platypuschan/obsidian-livesync",
+      "version": "0.3.1",
+      "digest": "sha256:b12deb99890f8c2f5c8fdf80ed9555f57d15a39d4ece2a348a2748cd1582495e",
+      "revision": "a11097ec64378934271c0ac91b18d83cf09a682e",
+      "min_core": "3.22.0"
+    }
+  },
+  "main_ci": {
+    "ns8-adguard-home": {
+      "merge_sha": "776489db81e14ab4e50b4d18899d47ae58f48201",
+      "runs": [
+        {
+          "id": 39031494990,
+          "name": "Publish tested catalog version",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-adguard-home/actions/runs/39031494990",
+          "run_attempt": 1
+        },
+        {
+          "id": 39031113064,
+          "name": "Publish tested catalog version",
+          "status": "completed",
+          "conclusion": "skipped",
+          "html_url": "https://github.com/Platypuschan/ns8-adguard-home/actions/runs/39031113064",
+          "run_attempt": 1
+        },
+        {
+          "id": 39030494314,
+          "name": "Validate",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-adguard-home/actions/runs/39030494314",
+          "run_attempt": 1
+        },
+        {
+          "id": 39030494641,
+          "name": "Publish images",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-adguard-home/actions/runs/39030494641",
+          "run_attempt": 2
+        }
+      ],
+      "checks": [
+        {
+          "name": "promote",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-adguard-home/actions/runs/39031494990/job/117392680529"
+        },
+        {
+          "name": "NS8 (rocky9, update) / update rocky9",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-adguard-home/actions/runs/39030494641/job/117391585147"
+        },
+        {
+          "name": "trivy / Scan images (ghcr.io/platypuschan/adguard-home:latest)",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-adguard-home/actions/runs/39030494641/job/117391584990"
+        },
+        {
+          "name": "trivy / Scan images (docker.io/adguard/adguardhome:v0.107.79@sha256:aba9e3bf0613be3ba3755e1fc311b126e2c24...",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-adguard-home/actions/runs/39030494641/job/117391584981"
+        },
+        {
+          "name": "NS8 (debian13, install) / install debian13",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-adguard-home/actions/runs/39030494641/job/117391584914"
+        },
+        {
+          "name": "module / Get module info",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-adguard-home/actions/runs/39030494641/job/117391584841"
+        },
+        {
+          "name": "NS8 (rocky9, install) / install rocky9",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-adguard-home/actions/runs/39030494641/job/117391584835"
+        },
+        {
+          "name": "trivy / Scan module UI and imageroot (ui, ./ui, true)",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-adguard-home/actions/runs/39030494641/job/117391584806"
+        },
+        {
+          "name": "trivy / Scan module UI and imageroot (imageroot, ./imageroot, true)",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-adguard-home/actions/runs/39030494641/job/117391584701"
+        },
+        {
+          "name": "publish-images / Publish module images",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-adguard-home/actions/runs/39030494641/job/117391584195"
+        },
+        {
+          "name": "NS8 (debian13, update) / update debian13",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-adguard-home/actions/runs/39030494641/job/117391584105"
+        },
+        {
+          "name": "promote",
+          "status": "completed",
+          "conclusion": "skipped",
+          "html_url": "https://github.com/Platypuschan/ns8-adguard-home/actions/runs/39031113064/job/117391583659"
+        },
+        {
+          "name": "UI lint and build",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-adguard-home/actions/runs/39030494314/job/117389794054"
+        },
+        {
+          "name": "Static checks",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-adguard-home/actions/runs/39030494314/job/117389793949"
+        }
+      ]
+    },
+    "ns8-maubot": {
+      "merge_sha": "54a6f405ce6be76763f81957134782e1205df56d",
+      "runs": [
+        {
+          "id": 39031164294,
+          "name": "Publish tested catalog version",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-maubot/actions/runs/39031164294",
+          "run_attempt": 1
+        },
+        {
+          "id": 39030496903,
+          "name": "Publish images",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-maubot/actions/runs/39030496903",
+          "run_attempt": 1
+        },
+        {
+          "id": 39030496675,
+          "name": "Validate",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-maubot/actions/runs/39030496675",
+          "run_attempt": 1
+        }
+      ],
+      "checks": [
+        {
+          "name": "promote",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-maubot/actions/runs/39031164294/job/117391728067"
+        },
+        {
+          "name": "NS8 (rocky9, update) / update rocky9",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-maubot/actions/runs/39030496903/job/117389980409"
+        },
+        {
+          "name": "trivy / Scan module UI and imageroot (imageroot, ./imageroot, true)",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-maubot/actions/runs/39030496903/job/117389980407"
+        },
+        {
+          "name": "NS8 (debian13, install) / install debian13",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-maubot/actions/runs/39030496903/job/117389980393"
+        },
+        {
+          "name": "NS8 (debian13, update) / update debian13",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-maubot/actions/runs/39030496903/job/117389980359"
+        },
+        {
+          "name": "NS8 (rocky9, install) / install rocky9",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-maubot/actions/runs/39030496903/job/117389980353"
+        },
+        {
+          "name": "trivy / Scan images (ghcr.io/platypuschan/maubot-runtime:924dbecbbfd1)",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-maubot/actions/runs/39030496903/job/117389980270"
+        },
+        {
+          "name": "trivy / Scan module UI and imageroot (ui, ./ui, true)",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-maubot/actions/runs/39030496903/job/117389980262"
+        },
+        {
+          "name": "trivy / Scan images (ghcr.io/platypuschan/maubot:latest)",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-maubot/actions/runs/39030496903/job/117389980248"
+        },
+        {
+          "name": "module / Get module info",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-maubot/actions/runs/39030496903/job/117389962008"
+        },
+        {
+          "name": "publish-images / Publish module images",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-maubot/actions/runs/39030496903/job/117389830452"
+        },
+        {
+          "name": "maubot runtime image",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-maubot/actions/runs/39030496903/job/117389801485"
+        },
+        {
+          "name": "Static checks",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-maubot/actions/runs/39030496675/job/117389800759"
+        },
+        {
+          "name": "UI lint and build",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-maubot/actions/runs/39030496675/job/117389800576"
+        }
+      ]
+    },
+    "ns8-ntfy-reworked": {
+      "merge_sha": "80e77ad3c3e994d7998b9e3dee458a36d47e8d0b",
+      "runs": [
+        {
+          "id": 39031357884,
+          "name": "Publish tested catalog version",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-ntfy-reworked/actions/runs/39031357884",
+          "run_attempt": 1
+        },
+        {
+          "id": 39030500209,
+          "name": "Validate",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-ntfy-reworked/actions/runs/39030500209",
+          "run_attempt": 1
+        },
+        {
+          "id": 39030500578,
+          "name": "Publish images",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-ntfy-reworked/actions/runs/39030500578",
+          "run_attempt": 1
+        }
+      ],
+      "checks": [
+        {
+          "name": "promote",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-ntfy-reworked/actions/runs/39031357884/job/117392289562"
+        },
+        {
+          "name": "NS8 (debian13, install) / install debian13",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-ntfy-reworked/actions/runs/39030500578/job/117390025286"
+        },
+        {
+          "name": "NS8 (debian13, update) / update debian13",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-ntfy-reworked/actions/runs/39030500578/job/117390025271"
+        },
+        {
+          "name": "NS8 (rocky9, install) / install rocky9",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-ntfy-reworked/actions/runs/39030500578/job/117390025264"
+        },
+        {
+          "name": "trivy / Scan module UI and imageroot (imageroot, ./imageroot, true)",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-ntfy-reworked/actions/runs/39030500578/job/117390025250"
+        },
+        {
+          "name": "NS8 (rocky9, update) / update rocky9",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-ntfy-reworked/actions/runs/39030500578/job/117390025244"
+        },
+        {
+          "name": "trivy / Scan images (docker.io/binwiederhier/ntfy:v2.28.0)",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-ntfy-reworked/actions/runs/39030500578/job/117390025218"
+        },
+        {
+          "name": "trivy / Scan images (ghcr.io/platypuschan/ntfy-reworked:latest)",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-ntfy-reworked/actions/runs/39030500578/job/117390025210"
+        },
+        {
+          "name": "trivy / Scan module UI and imageroot (ui, ./ui, true)",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-ntfy-reworked/actions/runs/39030500578/job/117390025148"
+        },
+        {
+          "name": "module / Get module info",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-ntfy-reworked/actions/runs/39030500578/job/117390000411"
+        },
+        {
+          "name": "publish-images / Publish module images",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-ntfy-reworked/actions/runs/39030500578/job/117389810974"
+        },
+        {
+          "name": "Static checks",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-ntfy-reworked/actions/runs/39030500209/job/117389810055"
+        },
+        {
+          "name": "UI lint and build",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-ntfy-reworked/actions/runs/39030500209/job/117389809914"
+        }
+      ]
+    },
+    "ns8-obsidian-livesync": {
+      "merge_sha": "a11097ec64378934271c0ac91b18d83cf09a682e",
+      "runs": [
+        {
+          "id": 39031720936,
+          "name": "Publish tested catalog version",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-obsidian-livesync/actions/runs/39031720936",
+          "run_attempt": 1
+        },
+        {
+          "id": 39030503062,
+          "name": "Validate",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-obsidian-livesync/actions/runs/39030503062",
+          "run_attempt": 1
+        },
+        {
+          "id": 39030503182,
+          "name": "Publish images",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-obsidian-livesync/actions/runs/39030503182",
+          "run_attempt": 1
+        }
+      ],
+      "checks": [
+        {
+          "name": "promote",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-obsidian-livesync/actions/runs/39031720936/job/117393343661"
+        },
+        {
+          "name": "trivy / Scan images (ghcr.io/platypuschan/obsidian-livesync:latest)",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-obsidian-livesync/actions/runs/39030503182/job/117390032833"
+        },
+        {
+          "name": "NS8 (debian13, update) / update debian13",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-obsidian-livesync/actions/runs/39030503182/job/117390032809"
+        },
+        {
+          "name": "NS8 (rocky9, install) / install rocky9",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-obsidian-livesync/actions/runs/39030503182/job/117390032763"
+        },
+        {
+          "name": "trivy / Scan module UI and imageroot (ui, ./ui, true)",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-obsidian-livesync/actions/runs/39030503182/job/117390032716"
+        },
+        {
+          "name": "NS8 (debian13, install) / install debian13",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-obsidian-livesync/actions/runs/39030503182/job/117390032704"
+        },
+        {
+          "name": "NS8 (rocky9, update) / update rocky9",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-obsidian-livesync/actions/runs/39030503182/job/117390032698"
+        },
+        {
+          "name": "trivy / Scan images (docker.io/library/couchdb:3.5.2)",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-obsidian-livesync/actions/runs/39030503182/job/117390032674"
+        },
+        {
+          "name": "trivy / Scan module UI and imageroot (imageroot, ./imageroot, true)",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-obsidian-livesync/actions/runs/39030503182/job/117390032642"
+        },
+        {
+          "name": "module / Get module info",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-obsidian-livesync/actions/runs/39030503182/job/117390010974"
+        },
+        {
+          "name": "publish-images / Publish module images",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-obsidian-livesync/actions/runs/39030503182/job/117389818076"
+        },
+        {
+          "name": "UI lint and build",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-obsidian-livesync/actions/runs/39030503062/job/117389817727"
+        },
+        {
+          "name": "Static checks",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Platypuschan/ns8-obsidian-livesync/actions/runs/39030503062/job/117389817672"
+        }
+      ]
+    }
+  },
+  "retry": {
+    "run_id": 39030494641,
+    "job_id": 117389973601,
+    "reason": "Docker Hub 502 fetching pinned runtime during previous release installation"
+  }
+}
