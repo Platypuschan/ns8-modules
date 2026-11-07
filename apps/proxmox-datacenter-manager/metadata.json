@@ -1,0 +1,18 @@
+{
+  "name": "Proxmox Datacenter Manager",
+  "description": {
+    "en": "Central overview and management of many Proxmox VE and Proxmox Backup Server installations, with HTTPS routing, persistent data and backup/restore support.",
+    "de": "Zentrale Übersicht und Verwaltung vieler Proxmox-VE- und Proxmox-Backup-Server-Installationen mit HTTPS-Routing, persistenten Daten und Backup/Restore."
+  },
+  "categories": ["system"],
+  "authors": [
+    {"name": "Platypuschan"}
+  ],
+  "docs": {
+    "documentation_url": "https://github.com/Platypuschan/ns8-proxmox-datacenter-manager#readme",
+    "bug_url": "https://github.com/Platypuschan/ns8-proxmox-datacenter-manager/issues",
+    "code_url": "https://github.com/Platypuschan/ns8-proxmox-datacenter-manager",
+    "relnotes_url": "https://github.com/Platypuschan/ns8-proxmox-datacenter-manager/releases"
+  },
+  "source": "ghcr.io/platypuschan/proxmox-datacenter-manager"
+}
