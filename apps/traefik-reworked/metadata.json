@@ -1,0 +1,18 @@
+{
+  "name": "Traefik Reworked",
+  "description": {
+    "en": "Core module: the NS8 reverse proxy Traefik with optional TLS client certificates per route, a pinned Traefik runtime and security updates. It replaces the traefik instance of a node and is updated from this catalog.",
+    "de": "Kernmodul: der NS8-Reverse-Proxy Traefik mit optionalen TLS-Clientzertifikaten je Route, gepinnter Traefik-Runtime und Sicherheitsupdates. Es ersetzt die Traefik-Instanz eines Knotens und wird über diesen Katalog aktualisiert."
+  },
+  "categories": ["system"],
+  "authors": [
+    {"name": "Platypuschan"}
+  ],
+  "docs": {
+    "documentation_url": "https://github.com/Platypuschan/ns8-traefik-reworked#readme",
+    "bug_url": "https://github.com/Platypuschan/ns8-traefik-reworked/issues",
+    "code_url": "https://github.com/Platypuschan/ns8-traefik-reworked",
+    "relnotes_url": "https://github.com/Platypuschan/ns8-traefik-reworked/releases"
+  },
+  "source": "ghcr.io/platypuschan/traefik-reworked"
+}
