@@ -14,6 +14,11 @@ quality = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(quality)
 
 
+# Core modules have no application page of their own, so there is no honest
+# screenshot to show; they are not listed as installable apps either.
+NO_SCREENSHOT = {"traefik-reworked"}
+
+
 class QualityTests(unittest.TestCase):
     def test_catalog_listing_assets_and_metadata_meet_local_criteria(self):
         entries = quality.local_entries(SCRIPTS.parent / "apps", [])
@@ -21,6 +26,8 @@ class QualityTests(unittest.TestCase):
             with self.subTest(app=entry["id"]):
                 result = quality.checks(entry, {})
                 for criterion in ("categories", "logo", "screenshots", "description", "translations", "docs"):
+                    if criterion == "screenshots" and entry["id"] in NO_SCREENSHOT:
+                        continue
                     self.assertTrue(result[criterion], criterion)
 
     def test_stable_labels_take_precedence_over_newer_testing(self):
