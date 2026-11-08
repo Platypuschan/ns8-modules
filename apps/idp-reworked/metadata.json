@@ -1,0 +1,18 @@
+{
+  "name": "IdP Reworked",
+  "description": {
+    "en": "Single sign-on for NS8 applications based on Keycloak, with one realm per user domain, client access groups, site policies and optional device-certificate sign-in.",
+    "de": "Single Sign-on für NS8-Anwendungen auf Basis von Keycloak mit einem Realm je Benutzerdomäne, Client-Zugriffsgruppen, Betriebsrichtlinien und optionaler Anmeldung per Gerätezertifikat."
+  },
+  "categories": ["security"],
+  "authors": [
+    {"name": "Platypuschan"}
+  ],
+  "docs": {
+    "documentation_url": "https://github.com/Platypuschan/ns8-idp-reworked#readme",
+    "bug_url": "https://github.com/Platypuschan/ns8-idp-reworked/issues",
+    "code_url": "https://github.com/Platypuschan/ns8-idp-reworked",
+    "relnotes_url": "https://github.com/Platypuschan/ns8-idp-reworked/releases"
+  },
+  "source": "ghcr.io/platypuschan/idp-reworked"
+}
