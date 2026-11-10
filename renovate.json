@@ -2,5 +2,29 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:recommended"
+  ],
+  "packageRules": [
+    {
+      "description": "GitHub Actions of the catalog workflows: non-major updates merge themselves after the catalog quality check passes",
+      "matchManagers": [
+        "github-actions"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "digest",
+        "pin"
+      ],
+      "groupName": "GitHub Actions",
+      "automerge": true,
+      "minimumReleaseAge": "3 days"
+    },
+    {
+      "description": "Major updates are proposed but merged by hand",
+      "matchUpdateTypes": [
+        "major"
+      ],
+      "automerge": false
+    }
   ]
 }
