@@ -1,34 +1,65 @@
 name: Publish NS8 catalog
 
+# Pull requests build the complete Pages artifact (generate the catalog from the
+# public GHCR releases, then configure and upload it) but never deploy it, so
+# a change to this workflow or to the Pages actions is exercised before merge.
+# Only main, the schedule and a manual start deploy. The github-pages
+# environment additionally restricts deployments to main.
+
 on:
   push:
     branches: [main]
+  pull_request:
   workflow_dispatch:
   schedule:
     - cron: '25 0,6,12,18 * * *'
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: ns8-catalog-pages
-  cancel-in-progress: true
 
 jobs:
-  publish:
+  build:
     runs-on: ubuntu-24.04
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      contents: read
+      pages: write
     steps:
       - uses: actions/checkout@v7
       - name: Generate catalog from public GHCR releases
         run: python3 scripts/generate.py
+      - name: Check generated metadata
+        run: python3 -c 'import json; d = json.load(open("site/ns8/updates/repodata.json")); assert d, "empty repodata"'
       - uses: actions/configure-pages@v6
       - uses: actions/upload-pages-artifact@v5
         with:
           path: site
+
+  deploy:
+    needs: build
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    concurrency:
+      group: ns8-catalog-pages
+      cancel-in-progress: true
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
       - id: deployment
         uses: actions/deploy-pages@v5
+      - name: Verify the published repository metadata
+        env:
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+        run: |
+          for attempt in 1 2 3 4 5 6; do
+            if curl -fsS "${PAGE_URL}ns8/updates/repodata.json" | python3 -c 'import json, sys; assert json.load(sys.stdin)'; then
+              exit 0
+            fi
+            sleep 10
+          done
+          echo "Published repodata.json is not reachable or not valid JSON" >&2
+          exit 1
