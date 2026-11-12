@@ -1,0 +1,18 @@
+{
+  "name": "Vaultwarden Reworked",
+  "description": {
+    "en": "Self-hosted password manager (Vaultwarden) for NS8 with single sign-on through idp-reworked and a native admin interface.",
+    "de": "Selbst gehosteter Passwortmanager (Vaultwarden) für NS8 mit Single Sign-on über idp-reworked und nativer Administrationsoberfläche."
+  },
+  "categories": ["security"],
+  "authors": [
+    {"name": "Platypuschan"}
+  ],
+  "docs": {
+    "documentation_url": "https://github.com/Platypuschan/ns8-vaultwarden-reworked#readme",
+    "bug_url": "https://github.com/Platypuschan/ns8-vaultwarden-reworked/issues",
+    "code_url": "https://github.com/Platypuschan/ns8-vaultwarden-reworked",
+    "relnotes_url": "https://github.com/Platypuschan/ns8-vaultwarden-reworked/releases"
+  },
+  "source": "ghcr.io/platypuschan/vaultwarden-reworked"
+}
